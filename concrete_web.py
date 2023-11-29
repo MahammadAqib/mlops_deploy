@@ -16,7 +16,7 @@ st.sidebar.header('User Input Parameters')
 
 def user_input_features():
     cement = st.sidebar.slider('cement', 140.5, 150.5, 165.8, 200.5)
-    slag = st.sidebar.slider('slag', 0, 42, 200, 114)
+    slag = st.sidebar.slider('slag', 0, 42, 200, 10)
     ash = st.sidebar.slider('ash', 0, 75, 90, 95)
     water = st.sidebar.slider('Water', 193, 200, 203, 228)
     superplastic = st.sidebar.slider('superplastic', 0, 3, 5, 10)
