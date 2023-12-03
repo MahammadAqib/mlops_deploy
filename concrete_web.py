@@ -15,14 +15,14 @@ This app predicts the **Cement Strength** type!
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    cement = st.sidebar.slider('cement', 140.5, 150.5, 165.8, 200.5)
-    slag = st.sidebar.slider('slag', 0, 42, 200, 10)
-    ash = st.sidebar.slider('ash', 0, 75, 100, 1)
-    water = st.sidebar.slider('Water', 193, 200, 203, 228)
-    superplastic = st.sidebar.slider('superplastic', 0, 3, 5, 10)
-    coarseagg = st.sidebar.slider('coarseagg', 1000, 950, 830, 1050)
-    fineagg = st.sidebar.slider('fineagg', 780, 820, 870, 900)
-    age = st.sidebar.slider('Age', 15, 20, 25, 30)
+    cement = st.sidebar.slider('cement', 140.5, 200.5, 1.0)
+    slag = st.sidebar.slider('slag', 0, 200,10)
+    ash = st.sidebar.slider('ash', 0, 100, 1)
+    water = st.sidebar.slider('Water', 193, 228, 1)
+    superplastic = st.sidebar.slider('superplastic', 0, 10,1)
+    coarseagg = st.sidebar.slider('coarseagg', 830, 1050, 1)
+    fineagg = st.sidebar.slider('fineagg', 780, 900, 1)
+    age = st.sidebar.slider('Age', 15, 30, 1)
     data = {'cement' : cement,
             'slag': slag,
             'ash': ash,
